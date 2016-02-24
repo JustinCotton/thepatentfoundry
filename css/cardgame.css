@@ -77,6 +77,10 @@
 @media (max-width: 400px) {
 
   #cardTable .card {
-    margin: 5px;
+    margin: 7px;
   }
+
+  #cardTable .card .back {
+    font-size: 40px;
+    line-height: 70px;
 }
