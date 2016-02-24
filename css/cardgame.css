@@ -76,3 +76,10 @@
 	background: url(../images/FoundryCard2.jpg);
   z-index: 1;
 }
+
+@media (max-width: 400px) {
+
+  #cardTable .card {
+    margin: 0px;
+  }
+}
