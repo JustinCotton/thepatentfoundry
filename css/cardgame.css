@@ -77,7 +77,7 @@
 @media (max-width: 500px) {
 
   #cardTable .card {
-    margin: 7px;
+    margin: 3px;
   }
 
   #cardTable .card .back {
