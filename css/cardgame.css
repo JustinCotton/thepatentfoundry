@@ -1,13 +1,14 @@
 #cardTable {
   margin: 0 auto;
-  margin-left: 3%;
   -moz-perspective: 1000;
   -webkit-perspective: 1000;
   perspective: 1000;
   position: relative;
   clear: right;
   float: none;
+  width: 100%;
 }
+
 #cardTable .card {
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -43,7 +44,6 @@
   left: 0;
   position: absolute;
   border-radius: 10px;
-	/*border: 2px solid white;*/
 }
 
 #cardTable .card .front {
@@ -54,11 +54,8 @@
 #cardTable .card .back {
   background-color: white;
   color: black;
-  /*font-family: "Berkshire Swash", sans-serif;*/
-  /*font-size: 70px;
-  line-height: 200px;*/
-  font-size: 40px;
-  line-height: 70px;
+  font-size: 70px;
+  line-height: 200px;
   text-align: center;
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
@@ -75,4 +72,11 @@
   /*background: url(../images/FoundryCard.jpg);*/
 	background: url(../images/FoundryCard2.jpg);
   z-index: 1;
+}
+
+@media (max-width: 400px) {
+
+  #cardTable .card {
+    margin: 5px;
+  }
 }
