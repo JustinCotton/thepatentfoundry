@@ -1,0 +1,78 @@
+#cardTable {
+  margin: 0 auto;
+  margin-left: 3%;
+  -moz-perspective: 1000;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  position: relative;
+  clear: right;
+  float: none;
+}
+#cardTable .card {
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-transition: -moz-transform 0.5s;
+  -o-transition: -o-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  float: left;
+  /*width: 180px;
+  height: 217px;*/
+	width: 60px;
+  height: 72px;
+  position: relative;
+  border-radius: 10px;
+	border: 2px solid white;
+	margin: 12px;
+	/*background: url(../images/FoundryCard.jpg);*/
+	background: url(../images/FoundryCard2.jpg);
+}
+
+#cardTable .card div {
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+	/*border: 2px solid white;*/
+}
+
+#cardTable .card .front {
+  background-color: #dedede;
+  z-index: 0;
+}
+
+#cardTable .card .back {
+  background-color: white;
+  color: black;
+  /*font-family: "Berkshire Swash", sans-serif;*/
+  /*font-size: 70px;
+  line-height: 200px;*/
+  font-size: 40px;
+  line-height: 70px;
+  text-align: center;
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+#cardTable .card.down {
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+#cardTable .card.down .front {
+  /*background: url(../images/FoundryCard.jpg);*/
+	background: url(../images/FoundryCard2.jpg);
+  z-index: 1;
+}
