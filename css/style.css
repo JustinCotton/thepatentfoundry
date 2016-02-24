@@ -9477,17 +9477,6 @@ body.x-navbar-fixed-top-active .x-navbar-wrap {
   margin: 5% auto;
 }
 
-@media (max-width: 700px) {
-
-  #map {
-    width: 80%;
-  }
-
-  [class*="artDeco"],[class*="oldTime"] {
-    font-size: 16px;
-  }
-}
-
 #answers {
   clear: left;
 }
@@ -9532,6 +9521,7 @@ footer nav+p {
 	border: white solid 2px;
   border-radius: 10px;
 	text-decoration: none;
+  text-shadow: 2px 2px black;
 }
 
 #headline {
@@ -9540,6 +9530,7 @@ footer nav+p {
 	color: white;
   font-family: 'Baumans', sans-serif;
 	font-size: 40px;
+  text-shadow: 4px 4px black;
 }
 
 h4 {
@@ -9550,6 +9541,47 @@ h4 {
 
 #answers {
   margin-top: 2%;
+}
+
+/*media query to make webpage response to smaller viewports*/
+@media (max-width: 700px) {
+
+  #map {
+    width: 80%;
+  }
+
+  [class*="artDeco"],[class*="oldTime"] {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  #headline,#enter {
+    font-size: 20px;
+    float: left;
+    margin: 2%;
+  }
+}
+
+@media (max-width: 700px) {
+
+  #headline,#enter {
+    font-size: 15px;
+    float: left;
+    clear: both;
+    margin: 2%;
+  }
+}
+
+@media (max-width: 320px) {
+
+  #headline,#enter {
+    font-size: 10px;
+    float: left;
+    clear: both;
+    margin: 2%;
+  }
 }
 
 /*from address filtering Angular example*/
